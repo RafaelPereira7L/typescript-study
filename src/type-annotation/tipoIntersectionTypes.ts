@@ -1,0 +1,19 @@
+// &
+type TemNome = { nome: string };
+type TemSobrenome = { sobrenome: string };
+type TemIdade = { idade: number };
+type Pessoa = TemNome & TemSobrenome & TemIdade;
+
+type AB = 'A' | 'B';
+type AC = 'A' | 'C';
+type AD = 'A' | 'D';
+type Intersection = AB & AC & AD;
+
+const person: Pessoa = {
+  nome: 'Rafael',
+  sobrenome: 'Pereira',
+  idade: 18,
+};
+console.log(person);
+
+export { person };
